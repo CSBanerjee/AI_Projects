@@ -1,0 +1,6 @@
+langgraph        # The graph framework for building the agent loop
+langchain        # Core LangChain library (tools, messages, etc.)
+langchain-openai # LangChain's connector to OpenAI's API
+python-dotenv    # Reads your .env file so you don't hardcode secrets
+requests         # Makes HTTP calls (used to hit the weather API)
+streamlit
