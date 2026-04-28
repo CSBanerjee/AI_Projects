@@ -1,0 +1,21 @@
+deal_id,region,product,revenue,discount_pct,rep_name,close_date,status
+D001,APAC,Analytics Pro,45000,10,Priya Sharma,2024-01-15,Won
+D002,EMEA,CRM Suite,120000,5,Hans Mueller,2024-01-18,Won
+D003,USR,Analytics Pro,30000,20,John Smith,2024-01-20,Lost
+D004,LATAM,Data Cloud,85000,15,Carlos Rivera,2024-01-22,Won
+D005,APAC,CRM Suite,95000,8,Wei Chen,2024-01-25,Won
+D006,EMEA,Analytics Pro,55000,12,Sophie Martin,2024-02-01,Lost
+D007,USR,Data Cloud,200000,3,Sarah Johnson,2024-02-05,Won
+D008,Canada,CRM Suite,75000,18,Marc Leblanc,2024-02-08,Won
+D009,APAC,Analytics Pro,40000,22,Raj Patel,2024-02-10,Lost
+D010,EMEA,Data Cloud,160000,6,Anna Schmidt,2024-02-12,Won
+D011,USR,Analytics Pro,35000,25,Mike Davis,2024-02-14,Won
+D012,LATAM,CRM Suite,60000,14,Ana Gonzalez,2024-02-18,Won
+D013,APAC,Data Cloud,110000,9,Li Wei,2024-02-20,Won
+D014,EMEA,Analytics Pro,48000,11,Pierre Dupont,2024-02-22,Lost
+D015,USR,CRM Suite,90000,7,Emily Brown,2024-02-25,Won
+D016,Canada,Analytics Pro,42000,16,Julie Tremblay,2024-03-01,Won
+D017,APAC,CRM Suite,80000,13,Yuki Tanaka,2024-03-04,Won
+D018,EMEA,Data Cloud,175000,4,Klaus Weber,2024-03-07,Won
+D019,USR,Analytics Pro,38000,19,Tom Wilson,2024-03-10,Lost
+D020,LATAM,Data Cloud,95000,10,Roberto Lima,2024-03-12,Won

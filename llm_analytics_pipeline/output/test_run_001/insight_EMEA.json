@@ -1,0 +1,17 @@
+{
+  "run_id": "test_run_001",
+  "region": "EMEA",
+  "timestamp": "2026-04-27T23:44:26.684352",
+  "kpis": {
+    "region": "EMEA",
+    "win_rate": 66.7,
+    "total_revenue": 455000,
+    "avg_deal_size": 151667,
+    "avg_discount": 7.6,
+    "total_deals": 5,
+    "won_deals": 3
+  },
+  "insight": "EMEA delivered strong results this quarter.",
+  "word_count": 6,
+  "tokens_used": 120
+}

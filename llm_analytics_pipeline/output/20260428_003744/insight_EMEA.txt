@@ -1,0 +1,20 @@
+REGIONAL INSIGHT REPORT
+Region    : EMEA
+Run ID    : 20260428_003744
+Generated : 2026-04-28 00:37:44
+=======================================================
+
+KPI SUMMARY:
+  Win Rate       : 60.0%
+  Total Revenue  : $455,000
+  Avg Deal Size  : $151,667
+  Avg Discount   : 7.6%
+  Total Deals    : 5
+  Won Deals      : 3
+
+EXECUTIVE INSIGHT (73 words):
+-------------------------------------------------------
+The EMEA region has achieved a strong win rate of 60% with a total won revenue of $455,000. The standout performance is the impressive average deal size of $151,667, which signals robust sales effectiveness and market presence. However, an average discount of 7.6% could erode profitability if not managed cautiously. I recommend that you prioritize a review of discounting practices this week to ensure they align with strategic revenue objectives and sustain profitability.
+-------------------------------------------------------
+
+Tokens used: 94

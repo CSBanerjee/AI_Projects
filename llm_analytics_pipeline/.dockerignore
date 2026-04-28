@@ -1,0 +1,22 @@
+# API keys — never go inside the container
+.env
+
+# Virtual environment — container builds its own
+.venv
+
+# Generated files — container creates its own
+output/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Git
+.git/
+.gitignore
+
+# Editor
+.vscode/
+.idea/

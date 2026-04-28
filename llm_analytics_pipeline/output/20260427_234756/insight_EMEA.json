@@ -1,0 +1,17 @@
+{
+  "run_id": "20260427_234756",
+  "region": "EMEA",
+  "timestamp": "2026-04-27T23:47:56.420119",
+  "kpis": {
+    "region": "EMEA",
+    "total_deals": 5,
+    "won_deals": 3,
+    "win_rate": 60.0,
+    "total_revenue": 455000.0,
+    "avg_deal_size": 151667.0,
+    "avg_discount": 7.6
+  },
+  "insight": "The EMEA region currently boasts a solid win rate of 60.0% with a total won revenue of $455,000 from five tracked deals. The most formidable strength to leverage is the impressive win rate, reflecting effective sales strategies and strong market engagement. However, the average discount of 7.6% poses a concern, as it may indicate pressure to lower pricing to secure deals, which could impact profit margins. I recommend that you initiate a review of current pricing strategies this week to ensure that discounts are optimized without eroding overall value.",
+  "word_count": 89,
+  "tokens_used": 110
+}

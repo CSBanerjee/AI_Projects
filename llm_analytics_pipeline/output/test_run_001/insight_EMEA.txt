@@ -1,0 +1,20 @@
+REGIONAL INSIGHT REPORT
+Region    : EMEA
+Run ID    : test_run_001
+Generated : 2026-04-27 23:44:26
+=======================================================
+
+KPI SUMMARY:
+  Win Rate       : 66.7%
+  Total Revenue  : $455,000
+  Avg Deal Size  : $151,667
+  Avg Discount   : 7.6%
+  Total Deals    : 5
+  Won Deals      : 3
+
+EXECUTIVE INSIGHT (6 words):
+-------------------------------------------------------
+EMEA delivered strong results this quarter.
+-------------------------------------------------------
+
+Tokens used: 120

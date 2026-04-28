@@ -1,0 +1,17 @@
+{
+  "run_id": "20260428_004051",
+  "region": "EMEA",
+  "timestamp": "2026-04-28T00:40:51.970499",
+  "kpis": {
+    "region": "EMEA",
+    "total_deals": 5,
+    "won_deals": 3,
+    "win_rate": 60.0,
+    "total_revenue": 455000.0,
+    "avg_deal_size": 151667.0,
+    "avg_discount": 7.6
+  },
+  "insight": "The EMEA region demonstrates strong sales performance with a win rate of 60% and total won revenue of $455,000. The standout metric is the impressive average deal size of $151,667, which indicates the team's effectiveness in securing substantial contracts. However, the average discount of 7.6% warrants attention as excessive discounting could erode profit margins. I recommend that the VP initiate a review of the discounting strategy this week to ensure pricing integrity while maintaining competitive advantage.",
+  "word_count": 76,
+  "tokens_used": 98
+}

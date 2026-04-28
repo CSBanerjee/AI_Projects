@@ -1,0 +1,42 @@
+# ============================================================
+# docker-compose.yml
+# ============================================================
+# PURPOSE:
+#   Runs the pipeline container with one command.
+#   docker-compose up → builds image + runs container
+#
+# WHY COMPOSE OVER PLAIN DOCKER RUN:
+#   docker run requires a long command with all flags
+#   every time. This file saves that configuration
+#   permanently and is much easier to read and share.
+# ============================================================
+
+version: "3.9"
+
+services:
+  pipeline:
+    # Build the image from the Dockerfile in current directory
+    build: .
+
+    # Name the running container
+    container_name: llm_analytics_pipeline
+
+    # Load environment variables from .env file
+    # This is how OPENAI_API_KEY gets into the container
+    # without being hardcoded anywhere in the code
+    env_file:
+      - .env
+
+    # Mount local directories into the container
+    # Left side  = path on your machine
+    # Right side = path inside the container
+    # Reports written inside the container appear
+    # instantly in your local output/ and logs/ folders
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+      - ./data:/app/data
+
+    # Only restart if the container crashes unexpectedly
+    # Does not restart on a clean exit
+    restart: on-failure
