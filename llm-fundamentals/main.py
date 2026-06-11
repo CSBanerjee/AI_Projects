@@ -1,6 +1,7 @@
-def main():
-    print("Hello from llm-fundamentals!")
+import tiktoken
 
+enc = tiktoken.encoding_for_model("gpt-4o")
+tokens = enc.encode("Hello, world!")
 
-if __name__ == "__main__":
-    main()
+print(f"Tokens: {tokens}")
+print(f"Token count: {len(tokens)}")
