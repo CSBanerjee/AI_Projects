@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: rag_analytics_api
+    ports:
+      - "8000:8000"
+      # maps container port 8000 to host port 8000
+      # http://localhost:8000 on your machine → container's port 8000
+    env_file:
+      - .env
+      # loads all variables from .env into the container
+      # .env is never copied into the image — it is mounted at runtime
+      # this keeps secrets out of the Docker image
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      # mounts local chroma_db/ into the container
+      # ChromaDB data persists on your machine even when the container restarts
+      - ./logs:/app/logs
+      # mounts local logs/ into the container
+      # log files are written to your local machine for easy access
+      - ./docs:/app/docs
+      # mounts local docs/ into the container
+      # ingest.py reads .txt files from here
+    restart: on-failure
+    # restart automatically if the container crashes
+    # does not restart if you explicitly stop it with docker compose down
+
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: rag_chroma
+    ports:
+      - "8001:8000"
+      # ChromaDB's internal port is 8000 — mapped to 8001 on the host
+      # http://localhost:8001 shows the ChromaDB API
+    volumes:
+      - ./chroma_db:/chroma/chroma
+      # same chroma_db/ folder — ChromaDB reads and writes here
+    restart: on-failure

@@ -1,0 +1,113 @@
+REGIONAL STRATEGY — EUROPE MIDDLE EAST AND AFRICA (EMEA)
+FY2024 | Owned by: EMEA VP of Sales | Confidential
+
+1. REGIONAL OVERVIEW
+
+EMEA is our largest region by ARR contributing 41 percent of global revenue in FY2023.
+Operated from London HQ with offices in Frankfurt, Paris, Amsterdam, Stockholm, and Dubai.
+GDPR, national data sovereignty laws, and financial services regulation including MiFID II
+and PSD2 create both compliance challenges and sales opportunities.
+
+Key markets by revenue contribution FY2023 actuals:
+  United Kingdom: 29 percent of EMEA ARR
+  Germany and DACH: 22 percent of EMEA ARR
+  France and Southern Europe: 17 percent of EMEA ARR
+  Nordics: 14 percent of EMEA ARR
+  Benelux: 9 percent of EMEA ARR
+  Middle East and Africa: 9 percent of EMEA ARR
+
+2. FY2024 TARGETS
+
+  New ARR target: USD 15,800,000
+  New logo target: 54 new customers
+  Average Selling Price: USD 292,000
+  Win rate target: 27 percent or above
+  Pipeline coverage target: 3.2x or above
+  Sales cycle target: 112 days or fewer
+  Churn target: 7 percent or below
+
+3. KEY ACCOUNTS STRATEGIC TIER 1
+
+  Barclays Analytics Group, UK, USD 920,000, renewal October 2024
+  Deutsche Bank Data Platform, Germany, USD 780,000, renewal January 2025
+  BNP Paribas Data Science, France, USD 640,000, renewal April 2025
+  Vodafone Analytics, UK, USD 510,000, renewal June 2024
+  Ericsson Data Intelligence, Sweden, USD 420,000, renewal September 2024
+  ADNOC Digital, UAE, USD 390,000, renewal March 2025
+  Allianz Analytics, Germany, USD 365,000, renewal December 2024
+  Unilever Data Hub, Netherlands, USD 310,000, renewal November 2024
+
+CRITICAL RENEWAL Vodafone Analytics June 2024:
+Procurement is evaluating DataRival as an alternative. EMEA VP personally managing.
+Competitive bake-off scheduled February 2024. Do not reduce price without VP approval.
+Focus on data lineage differentiation.
+
+4. PRIORITY GROWTH VERTICALS
+
+4.1 Financial Services
+EMEA FS is our highest-value vertical globally. GDPR and MiFID II create mandatory
+data governance requirements aligning with our platform.
+Target ICP: CDO or Head of Regulatory Reporting at banks with AUM above EUR 50 billion.
+FY2024 FS new logo target: 18 logos.
+
+4.2 Telecommunications
+M&A activity creates migration opportunities as telcos standardise data platforms post merger.
+FY2024 Telco new logo target: 10 logos.
+
+4.3 Manufacturing and Automotive
+Germany and the Nordics represent significant untapped opportunity.
+Key partners: Siemens Digital Industries, SAP.
+FY2024 new logo target: 8 logos.
+
+4.4 Energy and Utilities
+Growing demand in the Middle East and Northern Europe.
+FY2024 new logo target: 6 logos.
+
+5. GROWTH INITIATIVES FY2024
+
+5.1 DACH Acceleration
+DACH is 22 percent of EMEA ARR but only 16 percent of new logos in FY2023.
+Launch dedicated EU Cloud data residency offering in Frankfurt in Q2 2024.
+Target: Increase DACH new logos by 35 percent year over year.
+
+5.2 Middle East Expansion
+UAE and Saudi Arabia priority growth markets aligned to national AI strategies.
+FY2024 target: 5 new logos in UAE and KSA combined.
+Go-to-market: partner-led via Accenture Middle East and IBM Saudi Arabia.
+
+5.3 GDPR Compliance Positioning
+Updated GDPR enforcement in 2023 increased demand for data lineage tools.
+Q1 2024 campaign targeting DPOs at enterprises above EUR 1 billion revenue.
+
+5.4 Nordics Partnership Expansion
+Expand to EY Finland and KPMG Norway in H1 2024.
+Existing: PwC Sweden and Deloitte Denmark.
+
+6. COMPETITIVE LANDSCAPE EMEA
+
+DataRival: EMEA win rate 54 percent. No native lineage module.
+SAP Analytics Cloud: EMEA win rate 31 percent. Target non-SAP accounts.
+Tableau Salesforce: EMEA win rate 48 percent. Platform vs point-tool argument.
+Microsoft Fabric: Win rate TBD. Flag every Microsoft competitive deal to product immediately.
+
+7. DISCOUNT AUTHORITY EMEA
+
+Strategic markets UK Germany France Nordics enterprise: Standard plus 3 percent. Maximum 18 percent.
+Rest of EMEA: Standard schedule applies.
+UAE and KSA government adjacent accounts: EMEA VP may approve additional 5 percent.
+
+8. HEADCOUNT PLAN FY2024
+
+Current EMEA headcount: 67 total. 32 quota-carrying reps, 11 SEs, 10 CSMs, 6 SDRs,
+5 partner managers, 3 operations.
+Planned hires: 4 AEs DACH and Middle East, 2 AEs Nordics, 2 CSMs Germany and UAE,
+2 Partner Managers DACH and Middle East, 2 Sales Engineers, 1 EMEA Marketing Manager,
+1 Regional Legal Counsel GDPR specialist.
+
+9. RISK REGISTER
+
+  Vodafone renewal loss: Likelihood High, Impact High. VP-led intervention bake-off preparation.
+  DACH slow adoption: Likelihood Medium, Impact Medium. EU data residency launch Q2 2024.
+  Microsoft Fabric expansion: Likelihood Medium, Impact High. Competitive win cards product escalation.
+  FX headwinds GBP USD: Likelihood Low, Impact Medium. Multi-currency contracts.
+  GDPR enforcement changes: Likelihood Low, Impact Low. Monitor quarterly update messaging.

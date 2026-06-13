@@ -1,0 +1,12 @@
+.env
+.env.local
+.venv
+logs/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.gitignore
+.vscode/
+.idea/
+.DS_Store

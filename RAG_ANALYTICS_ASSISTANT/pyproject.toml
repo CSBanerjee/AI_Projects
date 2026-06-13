@@ -1,0 +1,43 @@
+[project]
+name = "rag-analytics-assistant"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "Production-grade RAG system for commercial analytics Q&A"
+authors = [
+    { name = "Chandra Shekhar Banerjee", email = "chandrashekhar.banerjee@gmail.com" }
+]
+dependencies = [
+    "openai",
+    "langchain",
+    "langchain-openai",
+    "langchain-community",
+    "langchain-chroma",
+    "chromadb",
+    "pdfplumber",
+    "fastapi",
+    "uvicorn",
+    "tiktoken",
+    "langsmith",
+    "ragas",
+    "pandas",
+    "python-dotenv",
+    "numpy",
+    "requests",
+    "datasets",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "W"]
+ignore = ["E501"]

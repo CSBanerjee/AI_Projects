@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is the maximum APAC enterprise discount for enterprise accounts above USD 150,000 ACV?",
+    "expected_answer": "Enterprise accounts USD 150,000 ACV and above receive standard tier plus 5 percent additional. Maximum APAC enterprise discount is 20 percent.",
+    "expected_source": "discount_policy.txt",
+    "expected_keywords": ["APAC", "enterprise", "20 percent", "150,000"]
+  },
+  {
+    "question": "What is the Win Rate definition and formula in the KPI definitions?",
+    "expected_answer": "Win Rate is the percentage of qualified opportunities resulting in closed won outcome. Formula: Closed Won divided by Closed Won plus Closed Lost multiplied by 100.",
+    "expected_source": "kpi_definitions.txt",
+    "expected_keywords": ["Win Rate", "Closed Won", "Closed Lost", "qualified opportunities"]
+  },
+  {
+    "question": "What is the maximum rep level discount for a deal size of USD 150,000 to 499,999?",
+    "expected_answer": "The maximum rep level discount for deal size USD 150,000 to 499,999 is 15 percent.",
+    "expected_source": "discount_policy.txt",
+    "expected_keywords": ["rep level discount", "150,000", "499,999", "15 percent"]
+  },
+  {
+    "question": "What is the APAC win rate target for FY2024 in the regional strategy?",
+    "expected_answer": "The APAC win rate target for FY2024 is 31 percent or above.",
+    "expected_source": "regional_strategy_apac.txt",
+    "expected_keywords": ["win rate target", "31 percent", "FY2024", "APAC"]
+  },
+  {
+    "question": "What is the Average Selling Price definition and formula?",
+    "expected_answer": "Average Selling Price is total new business ACV divided by the number of new logos closed in the period.",
+    "expected_source": "kpi_definitions.txt",
+    "expected_keywords": ["Average Selling Price", "ACV", "new logos", "formula"]
+  },
+  {
+    "question": "What does MEDDPICC stand for in the sales methodology overview?",
+    "expected_answer": "MEDDPICC stands for Metrics, Economic Buyer, Decision Criteria, Decision Process, Paper Process, Identify Pain, Champion, and Competition.",
+    "expected_source": "sales_playbook.txt",
+    "expected_keywords": ["MEDDPICC", "Metrics", "Economic Buyer", "Champion", "Competition"]
+  },
+  {
+    "question": "What is the Net Revenue Retention target for FY2024?",
+    "expected_answer": "Net Revenue Retention target for FY2024 is 110 percent or above.",
+    "expected_source": "kpi_definitions.txt",
+    "expected_keywords": ["Net Revenue Retention", "110 percent", "FY2024", "target"]
+  },
+  {
+    "question": "What deal size requires CFO review before Stage 4 in the escalation policy?",
+    "expected_answer": "Deal size above USD 1,000,000 requires CFO review before Stage 4.",
+    "expected_source": "sales_playbook.txt",
+    "expected_keywords": ["CFO review", "1,000,000", "Stage 4", "escalation"]
+  },
+  {
+    "question": "What is the EMEA new ARR target for FY2024 in the regional strategy?",
+    "expected_answer": "The EMEA new ARR target for FY2024 is USD 15,800,000.",
+    "expected_source": "regional_strategy_emea.txt",
+    "expected_keywords": ["New ARR target", "15,800,000", "FY2024", "EMEA"]
+  },
+  {
+    "question": "What are the deal stages and exit criteria in the sales playbook?",
+    "expected_answer": "There are six stages: Prospecting, Discovery, Solution Presented, Proposal Sent, Negotiation, and Closed Won or Closed Lost.",
+    "expected_source": "sales_playbook.txt",
+    "expected_keywords": ["Stage 1", "Prospecting", "Discovery", "Negotiation", "Closed Won"]
+  },
+  {
+    "question": "What is the Pipeline Coverage Ratio warning threshold that triggers a pipeline review?",
+    "expected_answer": "Below 2.5x triggers a pipeline review. Below 2.0x triggers a VP intervention.",
+    "expected_source": "kpi_definitions.txt",
+    "expected_keywords": ["Pipeline Coverage Ratio", "2.5x", "pipeline review", "2.0x"]
+  },
+  {
+    "question": "What is the maximum combined discount under any circumstances in the discount policy?",
+    "expected_answer": "Maximum combined discount under any circumstances is 35 percent. Deals requiring above 35 percent must be escalated to the CEO.",
+    "expected_source": "discount_policy.txt",
+    "expected_keywords": ["maximum combined discount", "35 percent", "CEO", "circumstances"]
+  },
+  {
+    "question": "What is the APAC new logo target for FY2024?",
+    "expected_answer": "The APAC new logo target for FY2024 is 38 new customers.",
+    "expected_source": "regional_strategy_apac.txt",
+    "expected_keywords": ["new logo target", "38", "FY2024", "APAC"]
+  },
+  {
+    "question": "What is Quota Attainment and what happens to reps below 70 percent for two consecutive quarters?",
+    "expected_answer": "Quota Attainment is closed won ACV divided by assigned quota. Reps below 70 percent for two consecutive quarters are placed on a performance improvement plan.",
+    "expected_source": "kpi_definitions.txt",
+    "expected_keywords": ["Quota Attainment", "70 percent", "consecutive quarters", "performance improvement plan"]
+  },
+  {
+    "question": "What is the Vodafone Analytics renewal risk in the EMEA key accounts?",
+    "expected_answer": "Vodafone Analytics renewal is in June 2024. Procurement is evaluating DataRival as an alternative. EMEA VP personally managing.",
+    "expected_source": "regional_strategy_emea.txt",
+    "expected_keywords": ["Vodafone Analytics", "DataRival", "EMEA VP", "June 2024"]
+  },
+  {
+    "question": "What is the annual uplift on renewal under the renewal discount policy?",
+    "expected_answer": "Annual uplift is CPI plus 3 percent. Reps may waive the uplift without approval. Any reduction below prior year price requires Manager approval.",
+    "expected_source": "discount_policy.txt",
+    "expected_keywords": ["Annual uplift", "CPI plus 3 percent", "Manager approval", "prior year price"]
+  },
+  {
+    "question": "What is the APAC sales cycle target in days for FY2024?",
+    "expected_answer": "The APAC sales cycle target is 95 days or fewer.",
+    "expected_source": "regional_strategy_apac.txt",
+    "expected_keywords": ["sales cycle target", "95 days", "APAC", "FY2024"]
+  },
+  {
+    "question": "What is the Net Promoter Score calculation and target for FY2024?",
+    "expected_answer": "NPS is calculated as percentage of Promoters scoring 9 to 10 minus percentage of Detractors scoring 0 to 6. Target FY2024 is 42 or above.",
+    "expected_source": "kpi_definitions.txt",
+    "expected_keywords": ["Net Promoter Score", "Promoters", "Detractors", "42"]
+  },
+  {
+    "question": "What are the priority growth verticals in the EMEA regional strategy?",
+    "expected_answer": "The EMEA priority growth verticals are Financial Services, Telecommunications, Manufacturing and Automotive, and Energy and Utilities.",
+    "expected_source": "regional_strategy_emea.txt",
+    "expected_keywords": ["Financial Services", "Telecommunications", "Manufacturing", "Energy and Utilities"]
+  },
+  {
+    "question": "What is the multi year prepay discount that is additive to the volume discount?",
+    "expected_answer": "2 year prepay earns up to 5 percent additional. 3 year prepay earns up to 8 percent additional. Both are additive to the volume discount.",
+    "expected_source": "discount_policy.txt",
+    "expected_keywords": ["prepay", "additive", "volume discount", "2 year", "3 year"]
+  }
+]

@@ -1,0 +1,283 @@
+/* ── CSS Variables — light mode defaults ─────────────────────────────────── */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --border: #e0e0e0;
+  --panel-bg: #f8f8f8;
+  --accent: #0066cc;
+}
+
+/* ── Dark mode — toggled by adding class to body ──────────────────────────── */
+body.dark-mode {
+  --bg: #1a1a1a;
+  --text: #f0f0f0;
+  --border: #333333;
+  --panel-bg: #242424;
+}
+
+/* ── Reset and base ───────────────────────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+/* ── Three-panel layout ───────────────────────────────────────────────────── */
+.layout {
+  display: flex;
+  height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Left panel — knowledge base list */
+.panel-left {
+  width: 220px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  background: var(--panel-bg);
+  overflow-y: auto;
+}
+
+/* Centre panel — chat conversation */
+.panel-centre {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Right panel — source citations */
+.panel-right {
+  width: 280px;
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  background: var(--panel-bg);
+  overflow-y: auto;
+}
+
+/* ── Panel headers ────────────────────────────────────────────────────────── */
+.panel-header {
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+/* ── Chat header ──────────────────────────────────────────────────────────── */
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.chat-header span { flex: 1; }
+
+.chat-header button {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.chat-header button:hover { background: var(--panel-bg); }
+
+/* ── Chat messages area ───────────────────────────────────────────────────── */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ── Individual message bubbles ───────────────────────────────────────────── */
+.message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.message-user {
+  background: var(--accent);
+  color: white;
+  margin-left: auto;
+  /* aligns user messages to the right */
+}
+
+.message-assistant {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+}
+
+.message-system {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+  font-size: 13px;
+  align-self: center;
+}
+
+.message-content {
+  display: block;
+}
+
+.message-time {
+  font-size: 11px;
+  opacity: 0.6;
+  display: block;
+  margin-top: 4px;
+}
+
+/* ── Chat input area ──────────────────────────────────────────────────────── */
+.chat-input-row {
+  display: flex;
+  gap: 8px;
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+
+textarea:focus { border-color: var(--accent); }
+
+#sendBtn {
+  padding: 8px 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#sendBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Source cards — right panel ───────────────────────────────────────────── */
+.source-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 8px;
+  font-size: 13px;
+}
+
+.source-title {
+  font-weight: 600;
+  font-size: 12px;
+  word-break: break-all;
+  margin-bottom: 4px;
+}
+
+.source-score {
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.source-preview {
+  color: var(--text);
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+/* ── Escalation card ──────────────────────────────────────────────────────── */
+.escalation-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 8px 0;
+  background: var(--panel-bg);
+  max-width: 80%;
+}
+
+.escalation-message {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.escalation-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn-yes {
+  background: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-yes:hover { opacity: 0.9; }
+
+.btn-no {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.btn-no:hover { background: var(--border); }
+
+.jira-link {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.escalation-success, .escalation-declined {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ── Knowledge base list — left panel ────────────────────────────────────── */
+#docListItems {
+  list-style: none;
+  padding: 8px 0;
+}
+
+#docListItems li {
+  padding: 6px 16px;
+  font-size: 13px;
+  color: var(--text);
+  opacity: 0.8;
+  cursor: default;
+}
+
+#docListItems li:hover { background: var(--border); }
+
+/* ── Mobile responsive — hide side panels below 768px ────────────────────── */
+@media (max-width: 768px) {
+  .panel-left, .panel-right { display: none; }
+}

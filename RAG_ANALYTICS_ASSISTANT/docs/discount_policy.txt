@@ -1,0 +1,88 @@
+DISCOUNT POLICY — COMMERCIAL ANALYTICS DIVISION
+Version 4.0 | Owned by: Finance | Last reviewed: January 2024
+
+1. POLICY PURPOSE
+
+This document sets out the maximum permitted discounts that a sales representative
+may offer without escalating to management for approval. All discounts are expressed
+as a reduction from the standard list price.
+
+2. STANDARD DISCOUNT SCHEDULE BY DEAL SIZE
+
+  Deal size USD 0 to 49,999: Maximum rep level discount 5 percent
+  Deal size USD 50,000 to 149,999: Maximum rep level discount 10 percent
+  Deal size USD 150,000 to 499,999: Maximum rep level discount 15 percent
+  Deal size USD 500,000 to 999,999: Maximum rep level discount 18 percent
+  Deal size USD 1,000,000 and above: Requires VP approval
+
+These are hard ceilings at the rep level. Offering a discount above the applicable
+tier without prior written approval is a policy violation.
+
+3. REGIONAL ADJUSTMENTS
+
+APAC Asia-Pacific
+  Enterprise accounts USD 150,000 ACV and above: Standard tier plus 5 percent additional.
+  Maximum APAC enterprise discount: 20 percent.
+  Rationale: Competitive dynamics in Japan, South Korea, and Australia require additional flexibility.
+  SMB accounts below USD 150,000 ACV: No regional adjustment. Standard schedule applies.
+
+EMEA Europe Middle East Africa
+  Strategic markets UK Germany France Nordics enterprise: Standard tier plus 3 percent.
+  Maximum strategic EMEA discount: 18 percent.
+  Rest of EMEA: Standard schedule applies.
+
+North America
+  No regional adjustment. Standard schedule applies.
+
+LATAM Latin America
+  All deal sizes: Standard tier plus 2 percent additional.
+
+4. APPROVAL TIERS FOR ABOVE POLICY DISCOUNTS
+
+  Up to rep level ceiling: Rep self-approve. No SLA.
+  Ceiling plus up to 5 percent: Regional Sales Manager. 24 hours.
+  Ceiling plus 5 to 10 percent: VP of Sales. 48 hours.
+  Ceiling plus 10 to 15 percent: VP of Sales and CFO. 72 hours.
+  Above ceiling plus 15 percent: CEO and CFO. 5 business days.
+
+All approval requests above rep level must be submitted via the Salesforce Discount
+Approval flow. Verbal approvals are not valid.
+
+5. DISCOUNT STACKING RULES
+
+  a) Volume plus Regional: Apply the higher of the two applicable discounts not both additively.
+
+  b) Multi year prepay discount: This IS additive to the volume discount.
+     2 year prepay: up to 5 percent additional
+     3 year prepay: up to 8 percent additional
+
+  c) End of quarter incentive: Finance may authorise up to 3 percent additional for deals
+     closing in the final two weeks of a fiscal quarter.
+
+  d) Competitive displacement: additional 2 percent is permitted where the prospect provides
+     a copy of the competitor commercial proposal. Requires Regional Sales Manager sign-off.
+
+Maximum combined discount under any circumstances: 35 percent.
+Deals requiring above 35 percent must be escalated to the CEO.
+
+6. PROFESSIONAL SERVICES DISCOUNTS
+
+  Below USD 25,000: 0 percent no discount permitted
+  USD 25,000 to 99,999: 5 percent
+  USD 100,000 and above: 10 percent
+
+7. RENEWAL DISCOUNT POLICY
+
+  On time renewal 30 or more days before expiry: Standard schedule applies.
+  Late renewal fewer than 30 days before expiry: No discount without VP approval.
+  Annual uplift: CPI plus 3 percent. Reps may waive the uplift without approval.
+  Any reduction below prior year price requires Manager approval.
+
+8. POLICY COMPLIANCE AND AUDIT
+
+Finance conducts a quarterly audit of all closed deals.
+
+Progressive discipline for violations:
+  1st violation: Formal written warning
+  2nd violation: Discount authority reduced by one tier for 6 months
+  3rd violation: Escalation to HR potential removal of discount authority

@@ -1,0 +1,102 @@
+SALES PLAYBOOK — COMMERCIAL ANALYTICS DIVISION
+Version 3.2 | Owned by: Sales Operations | Last reviewed: January 2024
+
+1. SALES METHODOLOGY OVERVIEW
+
+Our sales motion is built on the MEDDPICC framework:
+  M — Metrics         : quantify the economic impact for the buyer
+  E — Economic Buyer  : identify and access the person who controls budget
+  D — Decision Criteria: understand the formal scoring rubric
+  D — Decision Process : map every approval step and timeline
+  P — Paper Process   : legal, security, and procurement requirements
+  I — Identify Pain   : connect our solution to a felt business problem
+  C — Champion        : build and coach an internal advocate
+  C — Competition     : know who else is in the deal and our differentiation
+
+Every opportunity in Salesforce must have MEDDPICC fields completed before
+moving from Stage 3 (Solution Presented) to Stage 4 (Proposal Sent).
+
+2. QUALIFICATION CRITERIA
+
+A qualified opportunity must satisfy all three of the following:
+
+  a) BUDGET CONFIRMED
+     The economic buyer has confirmed a budget range of at least USD 50,000
+     annual contract value. Deals below this threshold are routed to inside sales.
+
+  b) TIMELINE CONFIRMED
+     The prospect has a stated go-live or decision date within 12 months.
+
+  c) PROBLEM-SOLUTION FIT
+     At least one of the following business pains must be documented:
+       - Manual reporting consuming more than 20 hours per analyst per week
+       - Inability to consolidate data from more than three source systems
+       - Board-level reporting errors in the last two quarters
+       - Compliance audit findings related to data lineage
+
+3. DEAL STAGES AND EXIT CRITERIA
+
+  Stage 1 — Prospecting: Entry: Lead created. Exit: Discovery call completed, pain identified.
+  Stage 2 — Discovery: Entry: Pain confirmed. Exit: Technical requirements gathered.
+  Stage 3 — Solution Presented: Entry: Demo delivered. Exit: MEDDPICC 80% complete.
+  Stage 4 — Proposal Sent: Entry: Commercial proposal delivered. Exit: Verbal acceptance.
+  Stage 5 — Negotiation: Entry: Redlines received. Exit: All terms agreed.
+  Stage 6 — Closed Won or Closed Lost: Entry: Signature received or deal withdrawn.
+
+Target stage velocity: S1 to S2 14 days, S2 to S3 21 days, S3 to S4 14 days,
+S4 to S5 10 days, S5 to S6 7 days.
+
+4. CLOSING TECHNIQUES
+
+4.1 The Assumptive Close
+Used when the prospect has given multiple positive signals. The rep assumes forward momentum.
+
+4.2 The Summary Close
+Used at Stage 5 to reduce hesitation by recapping agreed value and payback period.
+
+4.3 The Competitive Close
+Acknowledge competitor strength, pivot to differentiation, ask for decision criteria clarification.
+
+4.4 The Limited-Time Close
+Used only when there is a genuine verifiable time-bound incentive.
+Do not fabricate urgency. Reps caught using false urgency will receive a formal warning.
+
+5. DISCOVERY CALL STRUCTURE — 45 MINUTES
+
+  00 to 05 min: Agenda setting and rapport
+  05 to 15 min: Current state — how is the prospect solving the problem today
+  15 to 25 min: Pain exploration — SPIN questioning
+  25 to 35 min: Preliminary solution mapping
+  35 to 40 min: Next steps with owners and dates
+  40 to 45 min: Administrative — stakeholder list, technical contact, RFP timeline
+
+Always send a call summary email within 2 hours.
+
+6. COMPETITIVE INTELLIGENCE
+
+DataRival Inc.
+  Strengths: Mature BI layer, strong brand in Retail
+  Weaknesses: No native data lineage, 18-month implementation timelines
+  Win rate vs DataRival: 58 percent
+
+InsightBase
+  Strengths: Low per-seat pricing, popular with SMB
+  Weaknesses: Cannot handle more than 500 million row datasets, no enterprise SLA
+  Win rate vs InsightBase: 71 percent
+
+AnalyticsPro legacy
+  Strengths: Entrenched in Finance verticals
+  Weaknesses: On-premise only, no cloud roadmap, high TCO
+  Win rate vs AnalyticsPro: 63 percent
+
+7. ESCALATION POLICY
+
+  Deal size above USD 500,000: requires VP sign-off on commercial terms
+  Deal size above USD 1,000,000: requires CFO review before Stage 4
+  Non-standard payment terms: requires Finance approval
+  Contract term above 3 years: requires Legal and CFO approval
+  Free pilot above 60 days: requires VP approval
+  Custom SLA commitments: requires Head of Customer Success approval
+
+All escalations submitted via Salesforce Escalation Request flow.
+Target turnaround 2 business days for VP, 5 business days for CFO or Legal.

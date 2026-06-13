@@ -1,0 +1,106 @@
+KPI DEFINITIONS — COMMERCIAL ANALYTICS DIVISION
+Version 2.1 | Owned by: Analytics Team | Last reviewed: January 2024
+
+This document is the single source of truth for all commercial KPI definitions.
+
+1. REVENUE METRICS
+
+1.1 Average Selling Price (ASP)
+  Definition: Total new business ACV divided by the number of new logos closed in the period.
+  Formula: ASP = Total New ACV divided by Number of New Logos
+  Frequency: Reported monthly, trended quarterly
+  Exclusions: Renewals, expansions, and professional services revenue are excluded.
+  Target FY2024: USD 145,000 company-wide
+  Owner: VP of Sales
+
+1.2 Annual Recurring Revenue (ARR)
+  Definition: Annualised value of all active subscription contracts at a point in time.
+  Formula: ARR = Sum of all active monthly recurring revenue multiplied by 12
+  Target FY2024: USD 42,000,000
+  Owner: Finance
+
+1.3 Net Revenue Retention (NRR)
+  Definition: Revenue retained from existing customers including expansions net of churn.
+  Formula: NRR = Starting ARR plus Expansion ARR minus Churned ARR minus Contraction ARR divided by Starting ARR multiplied by 100
+  Target FY2024: 110 percent or above
+  Owner: VP of Customer Success
+
+1.4 Gross Revenue Retention (GRR)
+  Definition: Revenue retained from existing customers excluding expansion or upsell revenue.
+  Formula: GRR = Starting ARR minus Churned ARR minus Contraction ARR divided by Starting ARR multiplied by 100
+  Target FY2024: 88 percent or above
+  Owner: VP of Customer Success
+
+2. SALES EFFICIENCY METRICS
+
+2.1 Win Rate
+  Definition: Percentage of qualified opportunities resulting in closed won outcome.
+  Formula: Win Rate = Closed Won divided by Closed Won plus Closed Lost multiplied by 100
+  Scope: Opportunities reaching Stage 3 or beyond. Early withdrawals are excluded.
+  Frequency: Weekly rolling 13 week and monthly point in time
+  Target FY2024: 28 percent or above company-wide
+  Regional targets: APAC 31 percent or above. EMEA 27 percent or above. North America 26 percent or above.
+  Owner: VP of Sales
+
+2.2 Pipeline Coverage Ratio
+  Definition: Ratio of total pipeline value Stages 2 to 5 to remaining revenue target.
+  Formula: Coverage = Open Pipeline ACV divided by Remaining Quota
+  Minimum acceptable coverage: 3.0x at the start of a quarter
+  Warning threshold: Below 2.5x triggers a pipeline review
+  Critical threshold: Below 2.0x triggers a VP intervention
+  Owner: Sales Operations
+
+2.3 Quota Attainment
+  Definition: Individual rep performance as actual closed won ACV divided by assigned quota.
+  Formula: Closed Won ACV divided by Assigned Quota multiplied by 100
+  Threshold: Reps below 70 percent for two consecutive quarters are placed on a performance improvement plan.
+  Target distribution: 45 percent or more of reps above 100 percent. 25 percent or more at 80 to 100 percent.
+  Owner: VP of Sales
+
+2.4 Sales Cycle Length
+  Definition: Average calendar days from Stage 1 creation to Closed Won.
+  Target FY2024: 87 days or fewer
+  Owner: Sales Operations
+
+2.5 Magic Number
+  Definition: How much ARR is generated for every dollar spent on Sales and Marketing.
+  Formula: Net New ARR quarter multiplied by 4 divided by Sales and Marketing Spend prior quarter
+  Target FY2024: 0.75 or above. Above 1.0 indicates highly efficient growth.
+  Owner: CFO
+
+3. CUSTOMER METRICS
+
+3.1 Customer Acquisition Cost (CAC)
+  Formula: Total Sales and Marketing Spend divided by New Logos
+  Target FY2024: USD 48,000 or below. Payback period target 18 months or less.
+  Owner: CFO and Marketing
+
+3.2 Churn Rate (Logo Churn)
+  Formula: Churned Customers divided by Customers at Period Start multiplied by 100
+  Target FY2024: 8 percent or below annually
+  Owner: VP of Customer Success
+
+3.3 Net Promoter Score (NPS)
+  Calculation: Percentage of Promoters scoring 9 to 10 minus percentage of Detractors scoring 0 to 6
+  Target FY2024: 42 or above
+  Survey cadence: Quarterly sent 90 days post go live and at each annual renewal.
+  Owner: Customer Success
+
+4. REPORTING CADENCE
+
+  Daily: Closed pipeline and intraday activity via Salesforce
+  Weekly: Pipeline review win loss coverage ratio Monday call
+  Monthly: Full KPI pack distributed to leadership by 5th working day
+  Quarterly: Board pack investor metrics forecast versus actual reconciliation
+
+5. GLOSSARY
+
+  ACV: Annual Contract Value
+  ARR: Annual Recurring Revenue
+  MRR: Monthly Recurring Revenue
+  TCV: Total Contract Value used for multi year deals
+  MQL: Marketing Qualified Lead
+  SQL: Sales Qualified Lead
+  ICP: Ideal Customer Profile
+  NRR: Net Revenue Retention
+  GRR: Gross Revenue Retention

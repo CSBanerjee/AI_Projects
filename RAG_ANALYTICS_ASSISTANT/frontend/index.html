@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Left panel: knowledge base documents -->
+    <aside class="panel-left" id="docList">
+      <div class="panel-header">Knowledge base</div>
+      <ul id="docListItems"></ul>
+    </aside>
+
+    <!-- Centre panel: chat conversation -->
+    <main class="panel-centre">
+      <div class="chat-header">
+        <span>Analytics Assistant</span>
+        <button id="newChatBtn" onclick="newConversation()">New conversation</button>
+        <button id="themeBtn" onclick="toggleTheme()">Dark mode</button>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input-row">
+        <textarea id="questionInput" placeholder="Ask a question..." rows="2"></textarea>
+        <button id="sendBtn" onclick="sendQuestion()">Send</button>
+      </div>
+    </main>
+
+    <!-- Right panel: source citations -->
+    <aside class="panel-right" id="sourcesPanel">
+      <div class="panel-header">Sources</div>
+      <div id="sourcesList"></div>
+    </aside>
+
+  </div>
+  <script src="case_card.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
