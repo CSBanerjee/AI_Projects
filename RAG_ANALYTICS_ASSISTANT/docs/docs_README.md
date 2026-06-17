@@ -1,21 +1,33 @@
 # Knowledge Base Documentation
 
-| File | Topics | Pages | Last updated | Owner |
-|------|--------|-------|-------------|-------|
-| sales_playbook.pdf | MEDDPICC, qualification, deal stages, closing techniques, competitive intelligence, escalation policy | 4 | Jan 2024 | Sales Ops |
-| kpi_definitions.pdf | ASP, ARR, NRR, GRR, win rate, pipeline coverage, quota attainment, CAC, LTV, churn, NPS | 5 | Jan 2024 | Analytics |
-| discount_policy.pdf | Discount tiers by deal size, regional adjustments, approval tiers, stacking rules, PS discounts | 3 | Jan 2024 | Finance |
-| regional_strategy_apac.pdf | APAC targets, key accounts, growth verticals, Japan/India expansion, competitive landscape, headcount | 4 | Jan 2024 | APAC VP |
-| regional_strategy_emea.pdf | EMEA targets, key accounts, DACH/Middle East expansion, competitive landscape, risk register | 4 | Jan 2024 | EMEA VP |
+| File | Format | Topics | Last updated | Owner |
+|------|--------|--------|--------------|-------|
+| sales_playbook.txt | txt | Sales methodology, qualification, deal stages, closing techniques | 2024-01 | Sales Ops |
+| kpi_definitions.txt | txt | ASP, win rate, pipeline coverage, quota attainment | 2024-01 | Analytics |
+| discount_policy.txt | txt | Discount tiers by region and deal size, approval process | 2024-01 | Finance |
+| regional_strategy_apac.txt | txt | APAC market priorities, key accounts, growth targets | 2024-01 | APAC VP |
+| regional_strategy_emea.txt | txt | EMEA market priorities, key accounts, growth targets | 2024-01 | EMEA VP |
 
 ## Format
 
-All source documents are PDF files. Do not add `.txt` files — the ingestion
-pipeline is configured to load `.pdf` only.
+All source documents are plain text files. The ingestion pipeline
+(`app/ingestion/loader.py`) is configured to load `.txt` only — any other
+file extension in this folder is skipped silently.
 
 ## Updating the knowledge base
 
-1. Replace or add a `.pdf` file in this folder.
+1. Add or replace a `.txt` file in this folder.
 2. Run `python ingest.py --reset` to rebuild the vector store from scratch.
 3. Verify with `python eval/retrieval_test.py` — precision must remain above 0.70.
 4. Update the "Last updated" column in the table above.
+
+## Switching to PDF sources later
+
+If you swap these `.txt` files for real PDF documents, you must also update
+`app/ingestion/loader.py`:
+- Change the suffix filter from `.txt` to `.pdf`
+- Replace `TextLoader` with a PDF loader (`pypdf` and `pdfplumber` are
+  already in `requirements.txt` for this purpose)
+- Re-run `python ingest.py --reset` and re-verify retrieval precision —
+  PDF text extraction can change chunk boundaries and may require
+  re-tuning `CHUNK_SIZE` / `CHUNK_OVERLAP`
