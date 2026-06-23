@@ -12,6 +12,12 @@ All external service accounts and credentials are established before any
 code is written. Nothing in Phase 01 onward should be blocked by a missing
 account or key.
 
+> **Reusability note:** The project scaffold built across Phase 00 and Phase 01
+> is designed to be reusable for any RAG-based project. When reusing, only the
+> credentials below need to change — the folder structure, environment setup,
+> and configuration patterns stay the same. See `reusability_guide.md` for
+> full details.
+
 ---
 
 ## Accounts to be created
