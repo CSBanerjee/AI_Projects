@@ -18,8 +18,10 @@ Annual_Report_Analyzer_RAG_Project/
 │   │   └── services/
 │   │       └── __init__.py
 │   ├── tests/
+│   │   ├── conftest.py    # adds backend/ to sys.path for imports
 │   │   └── test_health.py
 │   ├── main.py            # FastAPI entry point
+│   ├── pytest.ini         # pytest asyncio configuration
 │   └── requirements.txt
 ├── frontend/
 │   ├── .venv/             ← frontend virtual environment (git-ignored)
@@ -212,14 +214,25 @@ vite.config.ts.timestamp-*
 Create `.env.example` in the project root (this gets committed):
 
 ```
-OPENROUTER_API_KEY=       # from openrouter.ai → Keys
+# ── LLM ──────────────────────────────────────────────────────────────────────
+# from openrouter.ai → Keys
+OPENROUTER_API_KEY=
+# model ID from openrouter.ai/models
 OPENROUTER_MODEL=meta-llama/llama-3.3-70b-instruct:free
+
+# ── Tracing ───────────────────────────────────────────────────────────────────
+# from smith.langchain.com → Settings → API Keys
 LANGCHAIN_API_KEY=
 LANGCHAIN_PROJECT=annual-report-analyzer
+
+# ── Jira ──────────────────────────────────────────────────────────────────────
 JIRA_URL=https://yoursite.atlassian.net
+# from id.atlassian.com → Security → API tokens
 JIRA_PERSONAL_TOKEN=
 JIRA_PROJECT_KEY=
 JIRA_ASSIGNEE_ACCOUNT_ID=
+
+# ── Backend ───────────────────────────────────────────────────────────────────
 BACKEND_URL=http://localhost:8000
 ```
 
@@ -300,7 +313,15 @@ uv pip install -r requirements.txt
 
 ```python
 # ── Import the tools that read .env and map values to this class ──────────────
+from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+# ── Resolve .env path relative to this file, not the working directory ────────
+# config.py is at backend/app/config.py
+# parents[0] = backend/app/
+# parents[1] = backend/
+# parents[2] = project root  ← where .env lives
+ENV_PATH = Path(__file__).resolve().parents[2] / ".env"
 
 
 # ── Define all the config variables the app needs ────────────────────────────
@@ -308,7 +329,7 @@ class Settings(BaseSettings):
 
     # Tell pydantic-settings where to find the .env file
     model_config = SettingsConfigDict(
-        env_file=".env",               # look for .env in the project root
+        env_file=ENV_PATH,             # absolute path — always resolves correctly
         env_file_encoding="utf-8",     # how to read the file
         extra="ignore",                # ignore any extra keys not listed below
     )
@@ -344,6 +365,23 @@ app = FastAPI(title="Annual Report Analyzer", version="0.1.0")
 @app.get("/health")
 def health() -> dict:
     return {"status": "ok"}
+```
+
+### `backend/pytest.ini`
+
+```ini
+[pytest]
+asyncio_mode = auto
+```
+
+### `backend/tests/conftest.py`
+
+```python
+import sys
+import os
+
+# ── Add backend/ to path so pytest can find main.py and app/ ─────────────────
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 ```
 
 ### `backend/tests/test_health.py`
@@ -392,7 +430,7 @@ python-dotenv==1.0.1      # reads .env to get BACKEND_URL
 Install:
 
 ```bash
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
 ### `frontend/app.py`
@@ -470,6 +508,8 @@ git push origin main
 
 - [ ] Folder structure matches the layout above
 - [ ] All `__init__.py` files exist in `app/`, `app/routers/`, `app/services/`
+- [ ] `pytest.ini` exists inside `backend/`
+- [ ] `conftest.py` exists inside `backend/tests/`
 - [ ] `.venv` created with Python 3.12 and active inside `backend/`
 - [ ] `.venv` created with Python 3.12 and active inside `frontend/`
 - [ ] `.env` filled with real values; `.env.example` committed with empty values

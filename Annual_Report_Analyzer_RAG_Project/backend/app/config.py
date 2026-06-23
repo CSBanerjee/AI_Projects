@@ -1,5 +1,13 @@
 # ── Import the tools that read .env and map values to this class ──────────────
+from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+# ── Resolve .env path relative to this file, not the working directory ────────
+# config.py is at backend/app/config.py
+# parents[0] = backend/app/
+# parents[1] = backend/
+# parents[2] = project root  ← where .env lives
+ENV_PATH = Path(__file__).resolve().parents[2] / ".env"
 
 
 # ── Define all the config variables the app needs ────────────────────────────
@@ -7,7 +15,7 @@ class Settings(BaseSettings):
 
     # Tell pydantic-settings where to find the .env file
     model_config = SettingsConfigDict(
-        env_file=".env",               # look for .env in the project root
+        env_file=ENV_PATH,             # absolute path — always resolves correctly
         env_file_encoding="utf-8",     # how to read the file
         extra="ignore",                # ignore any extra keys not listed below
     )
